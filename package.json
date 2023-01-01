@@ -1,0 +1,19 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Namaste react course",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeMaster17/Namaste-React-.git"
+  },
+  "author": "Harshit Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeMaster17/Namaste-React-/issues"
+  },
+  "homepage": "https://github.com/CodeMaster17/Namaste-React-#readme"
+}

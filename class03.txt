@@ -1,0 +1,9 @@
+- save --dev cann be replaced by "-d"
+
+-- Render : Updating something is known as dom
+
+-- JSX is not officially written as Javascript XML
+eg 
+const heading = <h1>Namaste React</h1> //right side of "=" is JSX
+
+JSX is not HTML inside Javascript "h1" above is not HTML but a html like syntax. 
