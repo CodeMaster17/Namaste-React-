@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1 id="title">Hello World</h1>
+    </div>
+
+    <!-- ######################################################################################################## -->
+    <!-- using basic javascript to pprint in id root -->
+
+    <!-- <script>
+    const heading = document.createElement("h1");
+    heading.innerHTML = "Namaste React using Javascript";
+    const root = document.getElementById("root");
+    root.appendChild(heading);
+</script> -->
+
+    <!-- ######################################################################################################## -->
+    <!-- now using react CDN links and it is shortest program oof REACT -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <!-- React DOM refers to web version of react which differentiates it from other types of react-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script>
+      // creating element using react
+      const heading1 = React.createElement(
+        "h1",
+        {
+          id: "title",
+        },
+        "Namaste everyone!"
+      );
+      const heading2 = React.createElement(
+        "h1",
+        {
+          id: "title",
+        },
+        "Namaste everyone 2!"
+      );
+      const container = React.createElement(
+        "div",
+        {
+          id: "container",
+        },
+        [heading1, heading2]
+      );
+      //   since here we are modifying DOM, therefore we use ReactDOM library and use createRoot API
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+
+      //   passing element inside root
+      //   react will replace everything present in html with all the things that we give in render
+      root.render(container);
+    </script>
+  </body>
+</html>
